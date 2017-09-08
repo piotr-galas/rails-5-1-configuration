@@ -1,0 +1,23 @@
+version: '2'
+services:
+  db:
+    image: postgres:9.6.2
+  server:
+    build:
+      context: ../../
+      dockerfile: ./config/docker/Dockerfile
+    volumes:
+      - ../../:/rails_app
+    volumes_from:
+      - gems
+    ports:
+      - '3000:3000'
+      - '8080:8080'
+    depends_on:
+      - db
+    tty: true
+    stdin_open: true
+  gems:
+    image: busybox
+    volumes:
+      - /rails_app_gems
