@@ -1,24 +1,7 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project was crated to show how to configure rails 5.1.x application. It will be as simple as it could. I want to everybody could easy inspired this repo to create own app. 
+I started by 
 
-Things you may want to cover:
+`rails new rails-5-1-configuration --webpack --database=postgresql` and commit it as initial commit
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+then every feature I add will be created as pull request with description what is going on
